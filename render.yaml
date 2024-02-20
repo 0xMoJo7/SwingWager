@@ -1,8 +1,8 @@
 databases:
-  - name: swing-wager-postgres
-    databaseName: swing-wager
+  - name: swing_wager_postgres
+    databaseName: swing_wager
     plan: free
-    user: swing-wager
+    user: swing_wager
 
 services:
   - type: redis
