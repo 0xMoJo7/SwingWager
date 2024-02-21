@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "defender",
     "common",
     "users",
+    "leaderboard"
 ]
 
 MIDDLEWARE = [
