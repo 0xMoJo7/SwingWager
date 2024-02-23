@@ -10,6 +10,6 @@ routes = [
     {
         "regex": r'leaderboard',
         "viewset": GOLFLeaderboardViewSet,
-        "basename": 'leaderboard'
+        "basename": 'leaderboard/leaderboard'
     },
 ]

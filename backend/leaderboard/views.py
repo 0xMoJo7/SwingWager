@@ -1,5 +1,5 @@
 from django.conf import settings
-import requests
+import requests as r
 
 from rest_framework import status, viewsets
 from rest_framework.decorators import action
@@ -15,10 +15,8 @@ class GOLFLeaderboardViewSet(viewsets.ViewSet):
             "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com"
         }
         try:
-            # Fetch leaderboard data
-            response = requests.get(url, headers=headers)
+            response = r.get(url, headers=headers)
             data = response.json()
-            # Handle and shape the response if needed here
             return Response(data, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({'error': 'Failed to fetch leaderboard data.'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
