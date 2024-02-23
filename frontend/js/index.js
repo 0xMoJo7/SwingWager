@@ -1,4 +1,4 @@
-// import pages
+// src/index.js
 import * as Sentry from "@sentry/browser";
 import React from "react";
 import { createRoot } from "react-dom/client";
@@ -14,3 +14,4 @@ Sentry.init({
 
 const root = createRoot(document.getElementById("react-app"));
 root.render(<App />);
+
