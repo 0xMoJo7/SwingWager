@@ -11,7 +11,7 @@ class GOLFLeaderboardViewSet(viewsets.ViewSet):
     def leaderboard(self, request):
         url = "https://golf-leaderboard-data.p.rapidapi.com/leaderboard/25"
         headers = {
-            "X-RapidAPI-Key": '04e4c2cbebmsh2cc4e73fda4e320p1f7b09jsn05a875bd6aaa',
+            "X-RapidAPI-Key": settings.GOLF_API_KEY,
             "X-RapidAPI-Host": "golf-leaderboard-data.p.rapidapi.com"
         }
         try:

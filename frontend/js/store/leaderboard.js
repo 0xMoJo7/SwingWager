@@ -3,7 +3,7 @@ import api from './api';
 
 // Async thunk for Leaderboard
 export const fetchLeaderboard = createAsyncThunk('leaderboard/fetch', async () => {
-  const response = await api.get('/api/leaderboard/');
+  const response = await api.get('/api/leaderboard/leaderboard');
   return response.data;
 });
 

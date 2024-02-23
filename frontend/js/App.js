@@ -7,7 +7,7 @@ import configureStore from "./store";
 const store = configureStore({});
 const App = () => (
   <Provider store={store}>
-    <Home />
+      <Home />
   </Provider>
 );
 

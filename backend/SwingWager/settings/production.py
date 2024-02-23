@@ -4,7 +4,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 from .base import *
 
-GOLF_RAPID_API_KEY = config("GOLF_RAPID_API_KEY")
+GOLF_API_KEY = config("GOLF_RAPID_API_KEY")
 
 DEBUG = False
 
